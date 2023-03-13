@@ -1,0 +1,83 @@
+.EditNewFA{
+    margin-top: -4px;
+}
+
+.ReactModal__Overlay{
+    background-color: transparent!important;
+}
+
+
+.addremoveline div{
+    font-size: 12px;
+    border: 1px solid #000;
+}
+
+.downloadFileclass{
+    border: 1px solid #999;
+    border-radius: 3px;
+    padding: 8px 0;
+    cursor: pointer;
+    text-shadow: 1px 1px #fff;
+    font-weight: 700;
+    font-size: 10pt;
+    background-color: deepskyblue;
+    color: #061f9d;
+    display: block;
+    width: 140px;
+    text-align: center;
+}
+
+.downloadFileclass1{
+    border: 1px solid #999;
+    border-radius: 3px;
+    padding: 8px 0;
+    cursor: pointer;
+    text-shadow: 1px 1px #fff;
+    font-weight: 700;
+    font-size: 10pt;
+    color: #061f9d;
+    display: block;
+    width: 140px;
+    text-align: center;
+}
+
+
+
+.downloadFileclass label {
+    width: 140px;
+}
+
+.downloadFile:active::before {
+    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+
+.windowsTop{
+    background-color: #777575;
+    width: 100%;
+    height: 35px;
+}
+
+.ReactModal__Content{
+    padding: 0!important;
+}
+
+.checkDocument{
+    text-decoration: underline;
+    font-weight: bold;
+}
+table, th, td {
+    border:1px solid black;
+    padding:3px 10px;
+}
+
+Modal{
+    page-break-after: auto;
+    background-color: red;
+}
+
+
+
+
+
+
+

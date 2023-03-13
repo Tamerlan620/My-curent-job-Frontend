@@ -1,0 +1,24 @@
+[
+  {
+    "ID": 112233445698,
+    "Date": "19.12.2022",
+    "Subsidiary": "Bilgeh",
+    "FA": "Telefon mobil Samsung A 50",
+    "FAID": 125569,
+    "Notes": "Zeif oldugu ucun deyisdirilir",
+    "Worker": "Eliyev Eli Eli oglu",
+    "Department": "IT",
+    "Document": true
+  },
+  {
+    "ID": 112233445698,
+    "Date": "19.12.2022",
+    "Subsidiary": "Bilgeh",
+    "FA": "Telefon mobil Samsung A 50",
+    "FAID": 125569,
+    "Notes": "Zeif oldugu ucun deyisdirilir",
+    "Worker": "Eliyev Eli Eli oglu",
+    "Department": "IT",
+    "Document": true
+  }
+]

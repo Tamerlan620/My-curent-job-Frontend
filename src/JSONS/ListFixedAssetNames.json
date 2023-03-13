@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "name": "Notebook HP G250",
+    "group": "Notebook",
+    "unit": "unit",
+    "producing_country": "China",
+    "serial_number": "CMD1215487A"
+  },
+  {
+    "id": 2,
+    "name": "Printer Canon MF 3010",
+    "group": "Printer",
+    "unit": "unit",
+    "producing_country": "China",
+    "serial_number": "IS2417G43"
+  }
+]

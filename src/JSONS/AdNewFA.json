@@ -1,0 +1,21 @@
+[
+  {
+  "id": "1000017122022221035985",
+  "status": "written",
+  "date": "17.12.2022",
+  "seller": "Məkan İnşaat",
+  "subsidiary": "Bilgəh",
+  "amount": "4269.52",
+  "currency": "AZN",
+  "document": false
+},  {
+  "id": "1000017122022133021755",
+  "status": "confirmed",
+  "date": "17.12.2022",
+  "seller": "Məkan İnşaat",
+  "subsidiary": "Buzovna",
+  "amount": "513",
+  "currency": "USA",
+  "document": false
+}
+]
