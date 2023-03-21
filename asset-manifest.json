@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/My-curent-job-Frontend/static/css/main.b1d1f392.css",
+    "main.js": "/My-curent-job-Frontend/static/js/main.186e6b80.js",
+    "index.html": "/My-curent-job-Frontend/index.html",
+    "main.b1d1f392.css.map": "/My-curent-job-Frontend/static/css/main.b1d1f392.css.map",
+    "main.186e6b80.js.map": "/My-curent-job-Frontend/static/js/main.186e6b80.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b1d1f392.css",
+    "static/js/main.186e6b80.js"
+  ]
+}
