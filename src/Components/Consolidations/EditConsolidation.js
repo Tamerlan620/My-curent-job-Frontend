@@ -124,7 +124,8 @@ function EditConsolidation() {
                 e.preventDefault()
                 let formData = new FormData();
                 formData.append("screenshot", file);
-                await axios.post("http://localhost:4444/consolidationPhoto", formData, {
+                await axios.post("https://my-curent-job-backend.onrender.com/consolidationPhoto", formData, {
+                // await axios.post("http://localhost:4444/consolidationPhoto", formData, {
                     headers: {
                         "Content-Type": "multipart/form-data",
                     },
@@ -136,7 +137,8 @@ function EditConsolidation() {
                 setDisabled(true)
                 e.preventDefault()
 
-                await axios.put("http://localhost:4444/consolidationPhoto", [currentIDdata.registrnumber,file.name])
+                await axios.put("https://my-curent-job-backend.onrender.com/consolidationPhoto", [currentIDdata.registrnumber,file.name])
+                // await axios.put("http://localhost:4444/consolidationPhoto", [currentIDdata.registrnumber,file.name])
                 e.preventDefault()
 
             }catch(err){
@@ -154,7 +156,8 @@ function EditConsolidation() {
     const HandleSaveData =async(e)=>{
         if (currentIDdata.registrnumber && currentIDdata.currentdate && currentIDdata.department && currentIDdata.faidnumber && currentIDdata.fixed_asset && currentIDdata.handedtime && currentIDdata.subsidiary && currentIDdata.worker){
             try {
-                await axios.put("http://localhost:4444/consolidationdata",[
+                await axios.put("https://my-curent-job-backend.onrender.com/consolidationdata",[
+                // await axios.put("http://localhost:4444/consolidationdata",[
                     currentIDdata.registrnumber,
                     currentIDdata.currentdate,
                     currentIDdata.worker,
@@ -234,7 +237,8 @@ function EditConsolidation() {
 
                 try {
 
-                    await axios.put(`http://localhost:4444/consolidation`,
+                    await axios.put(`https://my-curent-job-backend.onrender.com/consolidation`,
+                    // await axios.put(`http://localhost:4444/consolidation`,
                         [currentIDdata]);
 
                 }catch(err){

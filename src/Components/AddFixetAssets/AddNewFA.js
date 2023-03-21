@@ -213,7 +213,8 @@ function AddNewFa() {
     const SaveAllDataToServer = async (e)=>{
         if (sentData){
             try {
-                await Axios.post("http://localhost:4444/addFixedAssets",[
+                await Axios.post("https://my-curent-job-backend.onrender.com/addFixedAssets",[
+                // await Axios.post("http://localhost:4444/addFixedAssets",[
                     sentData,
                     Registr_numberforAddNewFA,
                     subsidiary,
@@ -226,7 +227,8 @@ function AddNewFa() {
                 if (fileforAddNewFA){
                     let formData = new FormData();
                     formData.append("screenshot", fileforAddNewFA);
-                    await Axios.post("http://localhost:4444/addFixedAssetsPhoto", formData, {
+                    await Axios.post("https://my-curent-job-backend.onrender.com/addFixedAssetsPhoto", formData, {
+                    // await Axios.post("http://localhost:4444/addFixedAssetsPhoto", formData, {
                         headers: {
                             "Content-Type": "multipart/form-data",
                         },

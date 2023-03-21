@@ -74,7 +74,8 @@ const EditFAName = () => {
             const sentData = async(e)=>{
                 // e.preventDefault()
                 try {
-                    await axios.put(`http://localhost:4444/addFixedAssetName/${EditID}`,Edit_Data);
+                    await axios.put(`https://my-curent-job-backend.onrender.com/addFixedAssetName/${EditID}`,Edit_Data);
+                    // await axios.put(`http://localhost:4444/addFixedAssetName/${EditID}`,Edit_Data);
                     window.location.reload();
                 }catch(err){
                     console.log(err)

@@ -207,7 +207,8 @@ function EditFa() {
 
                 let formData = new FormData();
                 formData.append("screenshot", fileforEditNewFA);
-                await axios.post("http://localhost:4444/addFixedAssetsPhoto", formData, {
+                await axios.post("https://my-curent-job-backend.onrender.com/addFixedAssetsPhoto", formData, {
+                // await axios.post("http://localhost:4444/addFixedAssetsPhoto", formData, {
                     headers: {
                         "Content-Type": "multipart/form-data",
                     },
@@ -231,7 +232,8 @@ function EditFa() {
 
         if (fileforEditNewFA){
             try {
-                await axios.put("http://localhost:4444/addFixedAssetsPhotoName", [currentIDdataforEditNewFA.registrid,fileforEditNewFA.name])
+                await axios.put("https://my-curent-job-backend.onrender.com/addFixedAssetsPhotoName", [currentIDdataforEditNewFA.registrid,fileforEditNewFA.name])
+                // await axios.put("http://localhost:4444/addFixedAssetsPhotoName", [currentIDdataforEditNewFA.registrid,fileforEditNewFA.name])
                 console.log("salam")
             }catch(err){
                 console.log(err)
@@ -263,8 +265,10 @@ function EditFa() {
               const sentDatas = async(e)=>{
 
                   try {
-                      await axios.put(`http://localhost:4444/addFixedAssets/${EditID}`,currentIDdataforEditNewFA);
-                      await axios.put(`http://localhost:4444/addFixedAssets2/${EditID}`,[FAdatasforEditNewFA,currentIDdataforEditNewFA]);
+                      await axios.put(`https://my-curent-job-backend.onrender.com/addFixedAssets/${EditID}`,currentIDdataforEditNewFA);
+                      // await axios.put(`http://localhost:4444/addFixedAssets/${EditID}`,currentIDdataforEditNewFA);
+                      await axios.put(`https://my-curent-job-backend.onrender.com/addFixedAssets2/${EditID}`,[FAdatasforEditNewFA,currentIDdataforEditNewFA]);
+                      // await axios.put(`http://localhost:4444/addFixedAssets2/${EditID}`,[FAdatasforEditNewFA,currentIDdataforEditNewFA]);
 
                       window.location.reload();
                   }catch(err){
@@ -326,7 +330,8 @@ function EditFa() {
         }else{
 
             try {
-                    axios.post("http://localhost:4444/approveReport",[FAdatasforEditNewFA])
+                    axios.post("https://my-curent-job-backend.onrender.com/approveReport",[FAdatasforEditNewFA])
+                    // axios.post("http://localhost:4444/approveReport",[FAdatasforEditNewFA])
                     .then(function (response) {
                         console.log("response",response);
                     })
@@ -334,7 +339,8 @@ function EditFa() {
                         console.log("error",error);
                     });
 
-                    await axios.put(`http://localhost:4444/approveFixedAssets/${EditID}`,[currentIDdataforEditNewFA,FAdatasforEditNewFA])
+                    await axios.put(`https://my-curent-job-backend.onrender.com/approveFixedAssets/${EditID}`,[currentIDdataforEditNewFA,FAdatasforEditNewFA])
+                    // await axios.put(`http://localhost:4444/approveFixedAssets/${EditID}`,[currentIDdataforEditNewFA,FAdatasforEditNewFA])
                     .then(function (response) {
                         console.log(response);
                     })

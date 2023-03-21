@@ -66,7 +66,8 @@ const AddNewFAName = () => {
             const sentData = async(e)=>{
                 // e.preventDefault()
                 try {
-                    await axios.post('http://localhost:4444/addFixedAssetName',added_Data);
+                    await axios.post('https://my-curent-job-backend.onrender.com/addFixedAssetName',added_Data);
+                    // await axios.post('http://localhost:4444/addFixedAssetName',added_Data);
                     window.location.reload();
                 }catch(err){
                     console.log(err)

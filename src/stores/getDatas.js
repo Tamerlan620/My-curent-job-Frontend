@@ -20,7 +20,8 @@ const initialState = {
 
 export const Get_Bought_FA = createAsyncThunk('/addfixedassets',async ()=>{
     try {
-        const {data} = await axios.get("http://localhost:4444/new");
+        const {data} = await axios.get("https://my-curent-job-backend.onrender.com/new");
+        // const {data} = await axios.get("http://localhost:4444/new");
         return data
     }catch(err){
         await console.log(err)
@@ -30,7 +31,8 @@ export const Get_Bought_FA = createAsyncThunk('/addfixedassets',async ()=>{
 
 export const Get_Fixed_Asset_Name = createAsyncThunk('/getfixedassetsName',async ()=>{
     try {
-        const {data} = await axios.get("http://localhost:4444/addFixedAssetName");
+        const {data} = await axios.get("https://my-curent-job-backend.onrender.com/addFixedAssetName");
+        // const {data} = await axios.get("http://localhost:4444/addFixedAssetName");
         return data
     }catch(err){
         await console.log(err)
@@ -40,7 +42,8 @@ export const Get_Fixed_Asset_Name = createAsyncThunk('/getfixedassetsName',async
 
 export const Get_Added_Fixed_Asset = createAsyncThunk('/getaddFixedAssets',async ()=>{
     try {
-        const {data} = await axios.get("http://localhost:4444/addFixedAssets");
+        const {data} = await axios.get("https://my-curent-job-backend.onrender.com/addFixedAssets");
+        // const {data} = await axios.get("http://localhost:4444/addFixedAssets");
         return data
     }catch(err){
         await console.log(err)
@@ -50,7 +53,8 @@ export const Get_Added_Fixed_Asset = createAsyncThunk('/getaddFixedAssets',async
 
 export const Get_CONSALLIDATION = createAsyncThunk('/getconsolidation',async ()=>{
     try {
-        const {data} = await axios.get("http://localhost:4444/consolidation");
+        const {data} = await axios.get("https://my-curent-job-backend.onrender.com/consolidation");
+        // const {data} = await axios.get("http://localhost:4444/consolidation");
         return data
     }catch(err){
         await console.log(err)
@@ -59,7 +63,8 @@ export const Get_CONSALLIDATION = createAsyncThunk('/getconsolidation',async ()=
 
 export const Get_Subs = createAsyncThunk('/getreports',async ()=>{
     try {
-        const {data} = await axios.get("http://localhost:4444/reports");
+        const {data} = await axios.get("https://my-curent-job-backend.onrender.com/reports");
+        // const {data} = await axios.get("http://localhost:4444/reports");
         return data
     }catch(err){
         await console.log(err)

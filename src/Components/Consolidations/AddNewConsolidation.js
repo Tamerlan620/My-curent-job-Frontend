@@ -141,7 +141,8 @@ function AddNewConsolidation() {
                 if (fileforAddConsolidation){
                     let formData = new FormData();
                     formData.append("screenshot", fileforAddConsolidation);
-                    await axios.post("http://localhost:4444/consolidationPhoto", formData, {
+                    await axios.post("https://my-curent-job-backend.onrender.com/consolidationPhoto", formData, {
+                    // await axios.post("http://localhost:4444/consolidationPhoto", formData, {
                         headers: {
                             "Content-Type": "multipart/form-data",
                         },
@@ -149,7 +150,8 @@ function AddNewConsolidation() {
                         console.log("Success ", res);
                     });
                 }
-                await axios.post("http://localhost:4444/consolidation",[
+                await axios.post("https://my-curent-job-backend.onrender.com/consolidation",[
+                // await axios.post("http://localhost:4444/consolidation",[
                     Registr_number,
                     new_Date,
                     selectedSubsidiarie,

@@ -26,7 +26,8 @@ function Report() {
             const getConsalidation = async()=>{
                 console.log(selectSubsidiary)
                 try {
-                    const {data} = await axios.get(`http://localhost:4444/report/${selectSubsidiary}`);
+                    const {data} = await axios.get(`https://my-curent-job-backend.onrender.com/report/${selectSubsidiary}`);
+                    // const {data} = await axios.get(`http://localhost:4444/report/${selectSubsidiary}`);
                     console.log(data)
                     setReport(data)
 
